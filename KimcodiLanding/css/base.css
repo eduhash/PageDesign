@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* Noto Sans */
+@font-face {
+	font-family: 'notoserifkr';
+	font-style: normal;
+	font-weight: 200;
+	src:url('fonts/NotoSerifCJKkr-ExtraLight.otf') format('opentype');
+
+}
+@font-face {
+	font-family: 'notoserifkr';
+	font-style: normal;
+	font-weight: 300;
+	src:url('fonts/NotoSerifCJKkr-Light.otf') format('opentype');
+}
+@font-face {
+	font-family: 'notoserifkr';
+	font-style: normal;
+	font-weight: 400;
+	src:url('fonts/NotoSerifCJKkr-Medium.otf') format('opentype');
+}
+@font-face {
+	font-family: 'notoserifkr';
+	font-style: normal;
+	font-weight: 500;
+	src:url('fonts/NotoSerifCJKkr-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'notoserifkr';
+	font-style: normal;
+	font-weight: 600;
+	src:url('fonts/NotoSerifCJKkr-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'notoserifkr';
+	font-style: normal;
+	font-weight: 700;
+	src:url('fonts/NotoSerifCJKkr-Bold.otf') format('opentype');
+}
+
+/* Noto Sans */
+@font-face {
+	font-family: 'notokr';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/notokr-light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/notokr-light.woff') format('woff'),
+		url('fonts/notokr-light.ttf') format('truetype'),
+		url('fonts/notokr-light.svg#notokr-light') format('svg');
+}
+@font-face {
+	font-family: 'notokr';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/notokr-regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/notokr-regular.woff') format('woff'),
+		url('fonts/notokr-regular.ttf') format('truetype'),
+		url('fonts/notokr-regular.svg#notokr-regular') format('svg');
+}
+@font-face {
+	font-family: 'notokr';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/notokr-bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/notokr-bold.woff') format('woff'),
+		url('fonts/notokr-bold.ttf') format('truetype'),
+		url('fonts/notokr-bold.svg#notokr-bold') format('svg');
+}
+
+/* Roboto */
+@font-face {
+	font-family:'Roboto';
+	src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Roboto-Regular.woff') format('woff'),
+		url('fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight:500;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'Roboto';
+	src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Roboto-Bold.woff') format('woff'),
+		url('fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight:600;
+	font-style:normal;
+}
+
+html{font-size:62.5%; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+html, body {height:100%;}
+body {padding:0; margin:0; font-family:'Roboto', 'notoserifkr', 'notokr', AppleGothic, sans-serif; font-size:14px; font-size:1.4rem; line-height:140%; color:#2e3040; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:100%; letter-spacing:-0.28px;}
+h1, h2, h3, h4, h5, h6 {font-family:'Roboto', 'notoserifkr', 'notokr', AppleGothic, sans-serif;}
