@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 .tabStyle01 .tab {margin:20px 0 0 0;}
 .tabStyle01 .tab > ul {display:flex; flex-direction:row; padding:0; margin:0; background:#fff; list-style:none; border-radius:3px;}
 .tabStyle01 .tab > ul > li {display:flex; flex-direction:column; flex:1; min-height:45px;}
@@ -43,9 +42,8 @@
 .t-pass-career-list > li:first-child {border-top:0;}
 .regards-txt {padding:30px 0; border-bottom:2px solid #ec5151; font-size:14px; font-size:1.4rem; line-height:170%; color:#333;}
 
-.color-main-point {color:#ec5151;}
-#about-us {background:#f8f8f8;}
 
+#about-us {background:#f8f8f8;}
 #about-us .info-box2 .info-box-icon.hover-colorful i:after {z-index:1;}
 #about-us .info-box2 .info-box-icon.hover-colorful i:before {position:relative; z-index:2;}
 
@@ -82,13 +80,6 @@
 .ico-play {content:''; display:flex; width:30px; height:20px; margin-right:10px; background:url('../img/ico_play.png') no-repeat center; background-size:100%; box-sizing:border-box;}
 .t-pass-youtube-list {display:flex; flex-direction:row; justify-content:space-around; padding-bottom:40px;}
 .t-pass-youtube-list > li {display:flex; flex-direction:column; flex:1; margin:0 40px;}
-
-.linked-tab {display:flex; flex-direction:row; padding:0 30px; justify-content:space-around;}
-.linked-tab > li {display:flex; flex-direction:column; flex:1; margin:0 10px;}
-.linked-tab > li > a {display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:8px 0; border-top:1px solid #fff; border-left:1px solid #fff; border-right:1px solid #fff; color:#fff; transition:0.4s; height:100%;}
-.linked-tab > li.on > a, .linked-tab > li > a:hover {background:#fff; color:#ec5151;}
-.t-pass-linked-tab-txt01 {padding-bottom:0; font-size:12px; font-size:1.2rem; color:inherit; line-height:120%;}
-.t-pass-linked-tab-txt02 {font-size:15px; font-size:1.5rem; color:inherit; line-height:140%;}
 
 .custom-header-colored-background {position:absolute; width:100%; height:100%; z-index:1;}
 .header-featured-content .container.bg-kim-team-right01 {position:relative; background:url('../img/bg_kim_team.png') no-repeat right 10px top 100px; background-size:110px; z-index:2;}
@@ -136,9 +127,7 @@ h4 {font-size:19px; font-size:1.9rem;}
 .featured-pricing-table-column .pricing-table-column-header .column-price {background:#ec5151;}
 .pricing-table-column-header .column-price span {color:#ec5151;}
 ul.single-column-features {padding:0;}
-footer {padding:30px 0; background:#e2e2e2;}
-.footer-message {left:0;}
-.container02 {width:950px;}
+
 .pricing-table-column-header .column-title {font-family:'notokr'; font-size:18px; font-size:1.8rem;}
 ul.single-column-features li:last-child {border-bottom:0;}
 .btn-call-direct {display:block; margin-top:10px; padding:15px 20px; width:100%; text-align:center; background:#ec5151; color:#fff; font-size:22px; font-size:2.2rem; font-family:'notokr'; font-weight:bold; line-height:150%; border-radius:10px;}
@@ -148,6 +137,10 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:inherit;}
 .col-md-12 .flat-section-title, .col-lg-12 .flat-section-title {width:100%;}
 #pricing-plans .flat-section-title {width:100%;}
 #subscribe .flat-section-title {width:100%;}
+
+.container02 {width:950px;}
+.color-main-point {color:#ec5151;}
+.iframe-wrap {width:100%; height:100%; box-sizing:border-box;}
 
 .for-pc {display:block;}
 .for-mobile {display:none;}
@@ -159,6 +152,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:inherit;}
 @media (max-width:900px){
   .container02 {width:100%; box-sizing:border-box;}
   .news-list > li {width:50%;}
+  .t-pass-tab-right-wrap {padding:20px 0 30px;}
 }
 @media (max-width: 768px) {
   .for-pc {display:none;}
@@ -167,11 +161,6 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:inherit;}
   .t-pass-youtube-lecture-wrap {padding:20px 10px 0;}
   .t-pass-youtube-list {flex-direction:column; padding-bottom:0;}
   .t-pass-youtube-list > li {margin:0 10px 30px;}
-
-  .linked-tab {padding:0;}
-  .linked-tab > li {margin:0 1px;}
-  .t-pass-linked-tab-txt01 {font-size:11px; font-size:1.1rem;}
-  .t-pass-linked-tab-txt02 {font-size:12px; font-size:1.2rem;}
 
   .tabStyle02 .tab > ul > li > a {padding:5px 8px; font-size:12px; font-size:1.2rem;}
   .tabStyle02 .tab > ul > li.on > a:before {border-left-width:8px; border-right-width:8px; border-top-width:13px; margin-left:-8px;}
@@ -217,7 +206,8 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:inherit;}
 
   .testmonials-carousel-outer {padding:0 20px;}
   .testmonials-carousel {padding-left:0;}
-  .tip-tit01 {font-size:18px; font-size:1.8rem;}
+  .tip-tit01 {padding:0 20px 40px 90px; font-size:18px; font-size:1.8rem;}
+  .testmonials-carousel-quote-icon {display:block; width:48px; top:-103px; left:20px;}
   .single-testmonial-message {font-size:14px; font-size:1.4rem;}
   .single-testmonial-person {font-size:15px; font-size:1.5rem;}
 
@@ -233,5 +223,8 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:inherit;}
   .btn-register-call {padding:10px 40px; font-size:16px; font-size:1.6rem; max-width:100%;}
   .btn-register-call:before {width:20px; height:20px;}
 
-  .footer-message {font-size:12px; font-size:1.2rem;}
+  #pricing-plans:before {width:100%; margin-left:-50%; background-position:left 20px top 0px; background-size:55px;}
+
+  .btn-call-direct {padding:10px; font-size:16px; font-size:1.6rem;}
+
 }
