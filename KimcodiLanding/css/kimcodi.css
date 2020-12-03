@@ -25,10 +25,10 @@
 .tabStyle02 .tab {margin:20px 0 0 0;}
 .tabStyle02 .tab > ul {display:flex; flex-direction:row; overflow:hidden; padding:0; margin:0 -3px; background:#fff; list-style:none; border-radius:3px;}
 .tabStyle02 .tab > ul > li {display:flex; flex-direction:column; flex:1; min-height:45px; margin-bottom:40px;}
-.tabStyle02 .tab > ul > li > a {display:flex; flex-direction:row; flex:1; position:relative; margin:0 3px; padding:15px 20px; font-size:24px; font-size:2.4rem; font-weight:bold; line-height:140%; background:#ec5151; color:#fff; text-decoration:none; box-sizing:border-box; text-align:center; align-items:center; justify-content:center; transition:0.4s;}
-.tabStyle02 .tab > ul > li.on > a {background:#000;}
-.tabStyle02 .tab > ul > li.on > a:before {content:''; display:inline-block; position:absolute; top:100%; left:50%; width:0; height:0; margin-left:-15px; box-sizing:border-box; border-left:15px solid transparent; border-right:15px solid transparent; border-top:26px solid #000;}
-.tabStyle02 .tab > ul > li > a:hover {background:#000;}
+.tabStyle02 .tab > ul > li > a {display:flex; flex-direction:row; flex:1; position:relative; margin:0 3px; padding:15px 20px; font-size:24px; font-size:2.4rem; font-weight:bold; line-height:140%; background:#000; color:#fff; text-decoration:none; box-sizing:border-box; text-align:center; align-items:center; justify-content:center; transition:0.4s;}
+.tabStyle02 .tab > ul > li.on > a {background:#ec5151;}
+.tabStyle02 .tab > ul > li.on > a:before {content:''; display:inline-block; position:absolute; top:100%; left:50%; width:0; height:0; margin-left:-15px; box-sizing:border-box; border-left:15px solid transparent; border-right:15px solid transparent; border-top:26px solid #ec5151;}
+.tabStyle02 .tab > ul > li > a:hover {background:#ec5151;}
 
 .tabStyle03 > .tab {margin:20px 0 0 0;}
 .tabStyle03 > .tab > ul {display:flex; flex-direction:row; overflow:hidden; padding:0; margin:0 -10px; background:#fff; list-style:none; border-radius:3px;}
