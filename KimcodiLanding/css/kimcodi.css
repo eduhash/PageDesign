@@ -1,9 +1,25 @@
 @charset "utf-8";
+/* 팝업스타일 */
+.dim {display:none; position:fixed; top:0; right:0; bottom:0; left:0; background:rgba(0, 0, 0, 0.3); z-index:110;}
+.popFixedWrap {display:none; position:fixed; top:0; right:0; bottom:0; left:0; z-index:1000; -webkit-overflow-scrolling:touch;}
+.popFixedWrap .dim {display:block; z-index:10;}
+.popWrap {position:relative; overflow:hidden; max-width:830px; min-height:100px; width:100%; padding:0; margin:0 auto; border-radius:0; border:1px solid #111; background:#fff; box-shadow:2px 1px 3px rgba(0, 0, 0, 0.2); z-index:20; box-sizing:border-box; font-family:'notokr';}
+.popWrap.maxW360 {max-width:360px;}
+.bodyFixed {position:fixed; overflow:hidden; width:100%; height:100%;}
+.popHeader {padding:14px 10px 8px; background:#ec5151; color:#fff;}
+.popTxt01 {font-size:25px; font-size:2.5rem; font-weight:bold; font-family:'notokr';}
+.ico-exclamation {display:block; margin:0 auto; width:37px; height:37px; background:url('../img/ico_exclamation.png') no-repeat center; background-size:100%; box-sizing:border-box;}
+.popHeader .popBtnClose {display:block; position:absolute; top:0; right:0; padding:0; margin:0; width:40px; height:40px; box-sizing:border-box; font-size:0; outline:0; border:0; background:transparent;}
+.popHeader .popBtnClose:before {content:''; background:#fff; position:absolute;  width:28px; height:2px; border-radius:0; top:19px; left:5px; -webkit-transform:rotate(-315deg);   transform:rotate(-315deg);}
+.popHeader .popBtnClose:after {content:''; background:#fff; position:absolute; width:28px; height:2px; border-radius:0; top:19px; left:5px; -webkit-transform:rotate(495deg); transform:rotate(495deg);}
+.popTxt01 {padding:30px 0; line-height:130%; text-align:center;}
+.popFooter .popBtnClose {display:block; margin:0 auto 15px; padding:5px 0; width:240px; background:#111; color:#fff; font-size:22px; font-size:2.2rem; text-align:center; outline:0; border:0; line-height:140%;}
+
 .tabStyle01 .tab {margin:20px 0 0 0;}
 .tabStyle01 .tab > ul {display:flex; flex-direction:row; padding:0; margin:0; background:#fff; list-style:none; border-radius:3px;}
 .tabStyle01 .tab > ul > li {display:flex; flex-direction:column; flex:1; min-height:45px;}
 .tabStyle01 .tab > ul > li > a {display:flex; flex-direction:row; flex:1; position:relative; padding:20px 20px 30px; font-size:20px; font-size:2.0rem; font-family:'notokr'; line-height:180%; background:#fff; color:#535353; text-decoration:none; box-sizing:border-box; text-align:center; align-items:center; justify-content:center; border:1px solid transparent; border:1px solid #535353; border-bottom:0;}
-.tabStyle01 .tab > ul > li.on > a, .tabStyle01 .tab > ul > li > a:hover {margin:0 -1px; background: rgb(255,255,255); background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,243,243,1) 100%); color:#ec5151; border:1px solid #ec5151; border-bottom:0; z-index:1; font-weight:bold;}
+.tabStyle01 .tab > ul > li.on > a, .tabStyle01 .tab > ul > li > a:hover {margin:0 -1px; background:rgb(255,255,255); background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,243,243,1) 100%); color:#ec5151; border:1px solid #ec5151; border-bottom:0; z-index:1; font-weight:bold;}
 .tabStyle01 .tabCon .flat-section-title:after {margin-top:54px;}
 
 .tabStyle02 .tab {margin:20px 0 0 0;}
@@ -85,7 +101,8 @@
 .header-featured-content .container.bg-kim-team-right01 {position:relative; background:url('../img/bg_kim_team.png') no-repeat right 10px top 100px; background-size:110px; z-index:2;}
 .header-featured-content .container.bg-kim-team-left01 {position:relative; background:url('../img/bg_kim_team.png') no-repeat left 10px top 100px; background-size:110px; z-index:2;}
 
-.btn-register-call {display:flex; flex-direction:row; position:relative; padding:12px 65px; font-size:30px; font-size:3.0rem; color:#fff; border:0; outline:0; font-weight:bold; border-radius:35px; background:#ec5151; color:#fff; letter-spacing:2px; line-height:100%; align-items:center; justify-content:center;}
+.btn-register-call {display:block; position:relative; padding:12px 65px;  border:0; outline:0;  border-radius:35px; background:#ec5151; cursor:pointer;}
+.btn-register-call span {display:inline-block; font-size:30px; font-size:3.0rem; font-weight:bold; font-style:normal; color:#fff; line-height:50px; letter-spacing:2px; vertical-align:top;}
 .btn-register-call:before {content:''; display:inline-block; position:relative; margin-right:8px; width:50px; height:50px; background:url('../img/ico_call.png') no-repeat center; background-size:100%;}
 .btn-register-call:hover {color:#fff;}
 
@@ -130,8 +147,8 @@ ul.single-column-features {padding:0;}
 
 .pricing-table-column-header .column-title {font-family:'notokr'; font-size:18px; font-size:1.8rem;}
 ul.single-column-features li:last-child {border-bottom:0;}
-.btn-call-direct {display:block; margin-top:10px; padding:15px 20px; width:100%; text-align:center; background:#ec5151; color:#fff; font-size:22px; font-size:2.2rem; font-family:'notokr'; font-weight:bold; line-height:150%; border-radius:10px;}
-.btn-call-direct:hover {color:#fff;}
+.btn-call-direct {display:block; margin-top:10px; padding:15px 20px; width:100%; text-align:center; background:#ec5151; color:#fff; font-size:22px; font-size:2.2rem; font-family:'notokr'; font-weight:bold; line-height:150%; border-radius:10px; cursor:pointer;}
+.btn-call-direct:hover, .btn-call-direct:focus {color:#fff;}
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:inherit;}
 .col-md-12 .flat-section-title, .col-lg-12 .flat-section-title {width:100%;}
@@ -154,10 +171,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:inherit;}
   .news-list > li {width:50%;}
   .t-pass-tab-right-wrap {padding:20px 0 30px;}
 }
-@media (max-width: 768px) {
-  .for-pc {display:none;}
-  .for-mobile {display:block;}
-
+@media (max-width:768px) {
   .t-pass-youtube-lecture-wrap {padding:20px 10px 0;}
   .t-pass-youtube-list {flex-direction:column; padding-bottom:0;}
   .t-pass-youtube-list > li {margin:0 10px 30px;}
@@ -220,11 +234,15 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:inherit;}
   .news-list-txt02 {font-size:16px; font-size:1.6rem;}
   .news-list-wrap .ico-check {margin-bottom:15px; width:30px; height:25px;}
 
-  .btn-register-call {padding:10px 40px; font-size:16px; font-size:1.6rem; max-width:100%;}
+  .btn-register-call {padding:10px 40px; height:40px; max-width:100%; box-sizing:border-box;}
+  .btn-register-call span {font-size:16px; font-size:1.6rem; line-height:20px;}
   .btn-register-call:before {width:20px; height:20px;}
 
   #pricing-plans:before {width:100%; margin-left:-50%; background-position:left 20px top 0px; background-size:55px;}
 
-  .btn-call-direct {padding:10px; font-size:16px; font-size:1.6rem;}
+  .btn-call-direct {padding:10px; font-size:1.6rem;}
+
+  .for-pc {display:none;}
+  .for-mobile {display:block;}
 
 }

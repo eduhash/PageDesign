@@ -668,7 +668,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-md-12">
+												<!-- <div class="col-md-12">
 													<div class="t-pass-youtube-lecture-wrap">
 														<ul class="t-pass-youtube-list">
 															<li>
@@ -685,7 +685,7 @@
 															</li>
 														</ul>
 													</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="tabCon">
@@ -728,7 +728,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-md-12">
+												<!-- <div class="col-md-12">
 													<div class="t-pass-youtube-lecture-wrap">
 														<ul class="t-pass-youtube-list">
 															<li>
@@ -745,7 +745,7 @@
 															</li>
 														</ul>
 													</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="tabCon">
@@ -786,7 +786,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-md-12">
+												<!-- <div class="col-md-12">
 													<div class="t-pass-youtube-lecture-wrap">
 														<ul class="t-pass-youtube-list">
 															<li>
@@ -803,7 +803,7 @@
 															</li>
 														</ul>
 													</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="tabCon">
@@ -845,7 +845,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-md-12">
+												<!-- <div class="col-md-12">
 													<div class="t-pass-youtube-lecture-wrap">
 														<ul class="t-pass-youtube-list">
 															<li>
@@ -862,7 +862,7 @@
 															</li>
 														</ul>
 													</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="tabCon">
@@ -908,7 +908,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-md-12">
+												<!-- <div class="col-md-12">
 													<div class="t-pass-youtube-lecture-wrap">
 														<ul class="t-pass-youtube-list">
 															<li>
@@ -925,7 +925,7 @@
 															</li>
 														</ul>
 													</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
@@ -1179,7 +1179,11 @@
 										</div>
 									</div>
 									<div class="col-sm-12">
-										<a class="btn-call-direct" href="tel:02-823-3112">
+										<a class="btn-call-direct for-pc" onclick="popOpen('pop01')">
+											지금 바로 상담 받고 할인받기<br>
+											☎ 상담전화: 02-823-3112
+										</a>
+										<a class="btn-call-direct for-mobile" href="tel:02-823-3112">
 											지금 바로 상담 받고 할인받기<br>
 											☎ 상담전화: 02-823-3112
 										</a>
@@ -1277,7 +1281,8 @@
 									</div>
 									<div class="col-sm-12">
 										<form class="subscribe-form" action="#">
-											<a href="tel:02-823-3112" class="btn-register-call">02-823-3112</a>
+											<a class="btn-register-call for-pc"  onclick="popOpen('pop01')"><span>02-823-3112</span></a>
+											<a href="tel:02-823-3112" class="btn-register-call for-mobile"><span>02-823-3112</span></a>
 										</form>
 										<div class="subscribe-result"></div>
 									</div>
@@ -1291,6 +1296,31 @@
 			<!-- end main-container -->
 		</div>
 		<!-- end full-container -->
+
+		<!-- pop01 -->
+    <div class="popFixedWrap pop01">
+      <section class="popWrap maxW360">
+        <div class="popContainer">
+          <header class="popHeader">
+						<i class="ico-exclamation"></i>
+						<button class="popBtnClose" onclick="popClose($(this));">닫기</button>
+          </header>
+          <div class="popBody">
+						<p class="popTxt01">모바일 클릭 시<br>
+						전화 연결됩니다.
+						</p>
+          </div>
+					<div class="popFooter">
+						<button class="popBtnClose" onclick="popClose($(this));">닫기</button>
+					</div>
+        </div>
+      </section>
+      <div class="dim"></div>
+    </div>
+    <!-- //pop01 -->
+
+
+
 	</div>
 
 	<div id="website-loading">
@@ -1321,6 +1351,7 @@
 	<script src="js/kimcodi.js"></script>
 
 	<script>
+	 // 동영상 링크 입력
 		$(function(){
 		  $(window).load(function() {
 		    createIFRAME('#t01m01', 'https://www.youtube.com/embed/eDX5Hepdgq8');
